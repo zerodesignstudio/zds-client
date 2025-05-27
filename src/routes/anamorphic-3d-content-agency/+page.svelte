@@ -104,7 +104,7 @@
 	});
 </script>
 
-<CustomHead seo={data.attributes.seo} />
+<CustomHead seo={data.seo} />
 <PageLayout
 	title={Title}
 	rightComp={true}
