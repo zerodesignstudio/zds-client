@@ -87,7 +87,7 @@
 			<!-- Locations -->
 			<div class="flex flex-col items-start gap-4">
 				<h3 class="text-sm">LOCATIONS</h3>
-				<div class="flex flex-col gap-3">
+				<div class="flex flex-col items-start gap-3">
 					{#each locations as location}
 						<a
 							href={`/works?location=${slugifySnakeCase(location?.attributes?.Name.toLowerCase())}`}

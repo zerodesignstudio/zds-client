@@ -1,11 +1,9 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
-	import BannerCta from '$lib/sections/Home/BannerCTA.svelte';
 	import FloatingActionButton from '$lib/components/FloatingActionButton.svelte';
 	import SectionLayout from '$lib/layout/SectionLayout.svelte';
 	import CustomHead from '$lib/components/CustomHead.svelte';
-	import { getImageUrl } from '$lib/utils/functions';
 	import { onMount } from 'svelte';
 
 	export let data: PageData;
@@ -106,7 +104,7 @@
 	});
 </script>
 
-<!-- <CustomHead seo={data.attributes.seo} /> -->
+<CustomHead seo={data.attributes.seo} />
 <PageLayout
 	title={Title}
 	rightComp={true}
